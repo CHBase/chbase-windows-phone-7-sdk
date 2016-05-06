@@ -160,8 +160,7 @@ namespace CHBase.SDK.Mobile
         /// <returns>The URL string.</returns>
         public string GetApplicationCreationUrl()
         {
-            string queryString = String.Format("?appid={0}&appCreationToken={1}&instanceName={2}&ismra=true",
-                                            MasterAppId,
+            string queryString = String.Format("?appCreationToken={1}&instanceName={2}&ismra=true",
                                             Uri.EscapeDataString(ApplicationCreationToken),
                                             Uri.EscapeDataString(MobilePlatform.DeviceName));
 
